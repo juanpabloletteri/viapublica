@@ -103,17 +103,25 @@ $(document).ready(function() {
 
             //CAMBIARRRRRRRRRRRRRRRRRR
             
-            /*$.ajax({
+            $.ajax({
                 url:"pagina1.php",
                 type:"POST",
-                data:{"first_name":$('#nombre').val()},
-                dataType:'text',
+                data:{
+                    numeroexpediente:$('#numeroexpediente').val(),
+                    anioexpediente:$('#anioexpediente').val(),
+                    empresa:$('#empresa').val(),
+                    callenombre:$('#callenombre').val(),
+                    callenumero:$('#callenumero').val(),
+                    ingreso:$('#ingreso').val(),
+                    observaciones:$('#observaciones').val(),
+                },
+                //dataType:'text',
                 success: function(res){
 
                     alert(res);
                 }
 
-            })*/
+            })
         });
 });
 

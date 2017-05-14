@@ -160,7 +160,7 @@
                     </div>
                 </div>
 
-                <!-- Select Basic -->
+              <!-- Select Basic 
 
                 <div class="form-group">
                     <label class="col-md-4 control-label">Provincia</label>
@@ -198,7 +198,7 @@
                     </div>
                 </div>
 
-                <!-- Text input-->
+                
 
                 <div class="form-group">
                     <label class="col-md-4 control-label">Código Postal</label>
@@ -210,7 +210,7 @@
                     </div>
                 </div>
 
-                <!-- Text input-->
+              
                 <div class="form-group">
                     <label class="col-md-4 control-label">Sitio Web</label>
                     <div class="col-md-4 inputGroupContainer">
@@ -221,7 +221,7 @@
                     </div>
                 </div>
 
-                <!-- radio checks -->
+               
                 <div class="form-group">
                     <label class="col-md-4 control-label">Tiene hosting?</label>
                     <div class="col-md-4">
@@ -238,7 +238,7 @@
                     </div>
                 </div>
 
-                <!-- Text area -->
+               
 
                 <div class="form-group">
                     <label class="col-md-4 control-label">Comentarios</label>
@@ -249,6 +249,8 @@
                         </div>
                     </div>
                 </div>
+
+                -->
 
                 <!-- Button -->
                 <div class="form-group">
