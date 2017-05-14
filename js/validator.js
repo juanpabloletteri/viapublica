@@ -123,25 +123,32 @@ $(document).ready(function() {
                 )
 
                     $.ajax({
-                        url:"pagina1.php",
+                        url:"nexoadministrador.php",
                         type:"POST",
                         data:{
+                            accion:"agregar",
                             numeroexpediente:$('#numeroexpediente').val(),
                             anioexpediente:$('#anioexpediente').val(),
                             empresa:$('#empresa').val(),
                             callenombre:$('#callenombre').val(),
                             callenumero:$('#callenumero').val(),
-                            ingreso:$('#ingreso').val(),
+                            fechaingreso:$('#fechaingreso').val(),
                             observaciones:$('#observaciones').val(),
                         },
-                        //dataType:'text',
-                        /*success: function(res){
-
-                            alert(res);
-                        }*/
+                        //despues de guardar borra los campos
+                        success: function(res){
+                            $('#numeroexpediente').val(""),
+                            //$('#anioexpediente').val(""),
+                            //$('#empresa').val(""),
+                            $('#callenombre').val(""),
+                            $('#callenumero').val(""),
+                            $('#fechaingreso').val(""),
+                            $('#observaciones').val("");
+                            //alert(res);
+                        }
 
                     })
-                    
+
                 }, function (dismiss) {
                 // dismiss can be 'cancel', 'overlay',
                 // 'close', and 'timer'
