@@ -101,27 +101,62 @@ $(document).ready(function() {
                 console.log(result);
             }, 'json');*/
 
-            //CAMBIARRRRRRRRRRRRRRRRRR
-            
-            $.ajax({
-                url:"pagina1.php",
-                type:"POST",
-                data:{
-                    numeroexpediente:$('#numeroexpediente').val(),
-                    anioexpediente:$('#anioexpediente').val(),
-                    empresa:$('#empresa').val(),
-                    callenombre:$('#callenombre').val(),
-                    callenumero:$('#callenumero').val(),
-                    ingreso:$('#ingreso').val(),
-                    observaciones:$('#observaciones').val(),
-                },
-                //dataType:'text',
-                success: function(res){
+            //sweetalert2
 
-                    alert(res);
+            swal({
+                title: 'Guardar',
+                text: "Desea guardar los datos?",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Si, guardar!',
+                cancelButtonText: 'No, cancelar!',
+                confirmButtonClass: 'btn btn-success',
+                cancelButtonClass: 'btn btn-danger',
+                buttonsStyling: false
+                }).then(function () {
+                swal(
+                    'Guardar!',
+                    'Expediente ingresado correctamente.',
+                    'success'
+                )
+
+                    $.ajax({
+                        url:"pagina1.php",
+                        type:"POST",
+                        data:{
+                            numeroexpediente:$('#numeroexpediente').val(),
+                            anioexpediente:$('#anioexpediente').val(),
+                            empresa:$('#empresa').val(),
+                            callenombre:$('#callenombre').val(),
+                            callenumero:$('#callenumero').val(),
+                            ingreso:$('#ingreso').val(),
+                            observaciones:$('#observaciones').val(),
+                        },
+                        //dataType:'text',
+                        /*success: function(res){
+
+                            alert(res);
+                        }*/
+
+                    })
+                    
+                }, function (dismiss) {
+                // dismiss can be 'cancel', 'overlay',
+                // 'close', and 'timer'
+                if (dismiss === 'cancel') {
+                    swal(
+                    'Cancelar',
+                    'guardado cancelado',
+                    'error'
+                    )
                 }
-
             })
+            
+            //CAMBIARRRRRRRRRRRRRRRRRR
+                      
+
         });
 });
 

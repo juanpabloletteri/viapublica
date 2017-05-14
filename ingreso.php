@@ -8,8 +8,8 @@
     <!-- icono en la parte superior -->
     <link rel="icon" href="./dist/favicon.ico">
     <!-- sweet alert -->
-    <script src="./dist/sweetalert-dev.js"></script>
-    <link rel="stylesheet" href="./dist/sweetalert.css">
+    <script src="./dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="./dist/sweetalert2.min.css">
     <!-- bootstrap y jquery nuevos desde internet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
