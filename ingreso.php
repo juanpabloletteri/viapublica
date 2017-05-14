@@ -14,7 +14,11 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    
+    <!-- bootstrapvalidator -->
+    <link rel="stylesheet" href="./css/bootstrapValidator.min.css">
+    <script src="./js/bootstrapValidator.min.js"></script>
+
+
     <title>INGRESO</title>
 </head>
 <body>
