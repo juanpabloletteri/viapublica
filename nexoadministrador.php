@@ -7,8 +7,11 @@ if (isset($_POST['accion']))
 {
 	if ($_POST['accion']=="agregar") 
 	{
-		var_dump($_POST);
         expediente::agregar($_POST['numeroexpediente'],$_POST['anioexpediente'],$_POST['empresa'],$_POST['callenombre'], $_POST['callenumero'], $_POST['fechaingreso'], $_POST['observaciones']);
+	}
+    if ($_POST['accion']=="tablaexpedientes") 
+	{
+        expediente::tablaexpedientes();
 	}
 }
 
