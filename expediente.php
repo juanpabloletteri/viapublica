@@ -42,7 +42,7 @@ class expediente
 						<th>Numero Exp</th>
 						<th>Año Exp</th>
 						<th>Empresa</th>
-						<th>Eliminar</th>
+						<th>Eliminar/Modificar</th>
 					</tr>
 				</thead>
 
@@ -55,12 +55,13 @@ class expediente
 							<td>".$expedienteaux["numeroexp"]."</td>
 							<td>".$expedienteaux["anioexp"]."</td>
 							<td>".$expedienteaux["empresa"]."</td>
-							<td><input type='button' class='btn btn-danger' value='Eliminar' onclick='eliminarexpediente($id)'></td>
+							<td><input type='button' class='btn btn-danger' value='Eliminar' onclick='eliminarexpediente($id)'>
+							<input type='button' class='btn btn-warning' value='Modificar' onclick='modificarexpediente($id)'></td>
 							</tr>";
 			}
 			"</tbody>
 		</table>";	
-	    //var_dump($tabla);
+	    var_dump($tabla);
 		return $tabla;
 
 	}

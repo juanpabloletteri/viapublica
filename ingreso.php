@@ -43,9 +43,19 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="todos.php">TODOS</a></li>
                 <li><a href="ingreso.php">INGRESO</a></li>
-                <li><a href="tabla.php">TABLA</a></li>
-                <li><a href="metrogas.php">METROGAS</a></li>
-                <li><a href="telecomunicaciones.php">TELECOMUNICACIONES</a></li>
+                <li><a href="tabla.php">EXPEDIENTES</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">LIQUIDACIONES
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li><a href="#">TODOS</a></li>
+                        <li><a href="#">AySA</a></li>
+                        <li><a href="#">EDESUR</a></li>
+                        <li><a href="#">METROGAS</a></li>
+                        <li><a href="#">TELECOMUNICACIONES</a></li>
+                        </ul>
+                    </li>                
+                <li><a href="metrogas.php">VARIOS</a></li>
             </ul>
             
             <ul class="nav navbar-nav navbar-right">

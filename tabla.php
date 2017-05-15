@@ -20,11 +20,6 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     -->
-    <!-- bootstrapvalidator -->
-    <link rel="stylesheet" href="./css/bootstrapValidator.min.css">
-    <script src="./js/bootstrapValidator.min.js"></script>
-    <!-- Validator.js -->
-    <script src="./js/validator.js"></script>
     <!-- Funciones.js -->
     <script src="./js/funciones.js"></script>
     <!-- datatable -->
