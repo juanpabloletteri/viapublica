@@ -7,7 +7,7 @@
     <title>TABLA</title>
 
     <!-- icono en la parte superior -->
-    <link rel="icon" href="./dist/favicon.ico">
+    <link rel="icon" href="./dist/favicon.png">
     <!-- sweet alert -->
     <script src="./dist/sweetalert2.min.js"></script>
     <link rel="stylesheet" href="./dist/sweetalert2.min.css">
